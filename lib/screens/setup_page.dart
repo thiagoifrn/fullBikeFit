@@ -17,14 +17,17 @@ class _SetupPageState extends State<SetupPage> {
   var formKey;
 
   StepperType stepperType = StepperType.horizontal;
-  final ValueNotifier<SetupBike> formPre =
-      ValueNotifier<SetupBike>(SetupBike());
-  final ValueNotifier<SetupBike> formPos =
-      ValueNotifier<SetupBike>(SetupBike());
-  late final ValueNotifier<dynamic> formPreValidade =
-      ValueNotifier<dynamic>(dynamic);
-  final ValueNotifier<dynamic> formPosValidade =
-      ValueNotifier<dynamic>(dynamic);
+
+  // Declaração de ValueNofiers
+
+  final ValueNotifier<SetupBike> formPre = ValueNotifier<SetupBike>(SetupBike());
+
+  final ValueNotifier<SetupBike> formPos = ValueNotifier<SetupBike>(SetupBike());
+
+  late final ValueNotifier<dynamic> formPreValidade = ValueNotifier<dynamic>(dynamic);
+
+  final ValueNotifier<dynamic> formPosValidade = ValueNotifier<dynamic>(dynamic);
+
   final GeneratedPDF generatedPDF = GeneratedPDF();
 
   @override
