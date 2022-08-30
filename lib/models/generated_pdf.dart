@@ -61,6 +61,14 @@ class GeneratedPDF {
                       ],
                     ),
                   ),
+                  pw.Image(
+                              width: 130,
+                              height: 70,
+                              fit: pw.BoxFit.cover,
+                              pw.MemoryImage(
+                                image4,
+                              ),
+                            ),
                 ],
               ),
             )
